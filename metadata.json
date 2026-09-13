@@ -1,0 +1,6 @@
+{
+  "name": "AURA Clothing",
+  "description": "A luxury Haute Horlogerie flagship experience featuring an interactive 3D timepiece model, cinematic product showcase, exploded calibre engineering, and bespoke reservation salon.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

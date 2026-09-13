@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', 'Cinzel', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-horology-black: #0B0B0C;
+  --color-horology-card: #141416;
+  --color-horology-elevated: #1B1B1E;
+  --color-horology-gold: #C5A059;
+  --color-horology-gold-light: #E5C384;
+  --color-horology-text: #EDE8E0;
+  --color-horology-muted: #8E8A82;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0B0B0C;
+  color: #EDE8E0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0B0B0C;
+  color: #EDE8E0;
+  overflow-x: hidden;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0C;
+}
+::-webkit-scrollbar-thumb {
+  background: #252528;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F5E5C9 0%, #C5A059 50%, #9B7B3E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(197, 160, 89, 0.25);
+  box-shadow: 0 0 25px rgba(197, 160, 89, 0.05);
+}
+
+.luxury-card {
+  background: #141416;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.luxury-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.luxury-card-hover:hover {
+  border-color: rgba(197, 160, 89, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(197, 160, 89, 0.08);
+}
+
